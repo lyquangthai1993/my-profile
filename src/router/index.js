@@ -11,6 +11,7 @@ const Router = () => {
       <Header />
       <Switch>
         <Route exact path={"/"} component={Home} />
+        <Route exact path={"/my-profile"} component={Home} />
       </Switch>
       <Footer />
     </Suspense>

@@ -9,12 +9,12 @@ import i18n from "./translation";
 import * as serviceWorker from "./serviceWorker";
 
 const App = () => (
-    <BrowserRouter>
-        <I18nextProvider i18n={i18n}>
-            <Styles />
-            <Router />
-        </I18nextProvider>
-    </BrowserRouter>
+  <BrowserRouter>
+    <I18nextProvider i18n={i18n}>
+      <Styles />
+      <Router />
+    </I18nextProvider>
+  </BrowserRouter>
 );
 
 ReactDOM.render(<App />, document.getElementById("root"));
