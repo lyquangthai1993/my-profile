@@ -1,11 +1,11 @@
-import React from "react";
-import { Row, Col } from "antd";
-import { useTranslation } from "react-i18next";
-import { Fade } from "react-reveal";
+import React from 'react';
+import { Col, Row } from 'antd';
+import { useTranslation } from 'react-i18next';
+import { Fade } from 'react-reveal';
 
-import Button from "../../common/Button";
+import Button from '../../common/Button';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 const MiddleBlock = ({ last, id, title, content, button }) => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const MiddleBlock = ({ last, id, title, content, button }) => {
                   {t(button)}
                 </Button>
               ) : (
-                ""
+                ''
               )}
             </Col>
           </S.ContentWrapper>

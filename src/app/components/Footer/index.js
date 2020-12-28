@@ -1,18 +1,18 @@
-import React, { Fragment } from "react";
-import { Row, Col, Select } from "antd";
-import i18n from "i18next";
-import { useTranslation } from "react-i18next";
-import { Fade } from "react-reveal";
+import React, { Fragment } from 'react';
+import { Row, Col, Select } from 'antd';
+import i18n from 'i18next';
+import { useTranslation } from 'react-i18next';
+import { Fade } from 'react-reveal';
 
-import Container from "../../common/Container";
-import SvgIcon from "../../common/SvgIcon";
+import Container from '../../common/Container';
+import SvgIcon from '../../common/SvgIcon';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 const Footer = () => {
   const { Option } = Select;
   const { t } = useTranslation();
-  const handleChange = (event) => {
+  const handleChange = event => {
     i18n.changeLanguage(event);
   };
 
@@ -23,11 +23,11 @@ const Footer = () => {
           <Container>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
-                <S.Language>{t("Contact")}</S.Language>
-                <S.Large to="/">{t("Tell us everything")}</S.Large>
+                <S.Language>{t('Contact')}</S.Language>
+                <S.Large to="/">{t('Tell us everything')}</S.Large>
                 <S.Para>
                   {t(
-                    `Do you have any question regarding the project? Fell free to reach out.`
+                    `Do you have any question regarding the project? Fell free to reach out.`,
                   )}
                 </S.Para>
                 <a href="mailto:l.qqbadze@gmail.com">
@@ -35,50 +35,50 @@ const Footer = () => {
                 </a>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Policy")}</S.Title>
+                <S.Title>{t('Policy')}</S.Title>
                 <S.Large to="/" left="true">
-                  {t("Application Security")}
+                  {t('Application Security')}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Software Principles")}
+                  {t('Software Principles')}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
                 <S.Empty />
                 <S.Large left="true" to="/">
-                  {t("Support Center")}
+                  {t('Support Center')}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Customer Support")}
+                  {t('Customer Support')}
                 </S.Large>
               </Col>
             </Row>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
-                <S.Language>{t("ADDRESS")}</S.Language>
+                <S.Language>{t('ADDRESS')}</S.Language>
                 <S.Para>Rancho Santa Margarita</S.Para>
                 <S.Para>2131 Elk Street</S.Para>
                 <S.Para>California</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
-                <S.Title>{t("Company")}</S.Title>
+                <S.Title>{t('Company')}</S.Title>
                 <S.Large left="true" to="/">
-                  {t("About")}
+                  {t('About')}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Blog")}
+                  {t('Blog')}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Press")}
+                  {t('Press')}
                 </S.Large>
                 <S.Large left="true" to="/">
-                  {t("Careers & Culture")}
+                  {t('Careers & Culture')}
                 </S.Large>
               </Col>
               <Col lg={6} md={6} sm={12} xs={24}>
                 <S.Select>
-                  <S.Language>{t("Language")}</S.Language>
+                  <S.Language>{t('Language')}</S.Language>
                   <Select
                     defaultValue="en"
                     onChange={handleChange}
@@ -98,7 +98,7 @@ const Footer = () => {
               type="flex"
               justify="space-between"
               align="middle"
-              style={{ paddingTop: "3rem" }}
+              style={{ paddingTop: '3rem' }}
             >
               <S.NavLink to="/">
                 <S.LogoContainer>

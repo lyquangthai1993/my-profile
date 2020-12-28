@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import * as S from "./styles";
+import * as S from './styles';
 
-const Input = (props) => (
+const Input = props => (
   <S.Container>
     <S.Input {...props} spellcheck="false" />
     <S.Span>{props.error}</S.Span>

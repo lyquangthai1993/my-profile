@@ -7,26 +7,18 @@
 import React, { memo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components/macro';
 
 import { useInjectReducer, useInjectSaga } from 'utils/redux-injectors';
 import { reducer, sliceKey } from './slice';
 import { selectHome } from './selectors';
 import { homeSaga } from './saga';
-import ContactFrom from "../../components/ContactForm";
-import ContentBlock from "../../components/ContentBlock";
-import MiddleBlock from "../../components/MiddleBlock";
-import Container from "../../common/Container";
-import ScrollToTop from "../../common/ScrollToTop";
+import Container from '../../common/Container';
+import ScrollToTop from '../../common/ScrollToTop';
 
-import Introduction from "../../content/introduction.json";
-import FirstBlock from "../../content/firstBlock.json";
-import SecondBlock from "../../content/secondBlock.json";
-import ThirdBlock from "../../content/thirdBlock.json";
-import FourthBlock from "../../content/fourthBlock.json";
-import ContactBlock from "../../content/contactBlock.json";
-interface Props {}
+interface Props {
+}
 
 export const Home = memo((props: Props) => {
   useInjectReducer({ key: sliceKey, reducer: reducer });
@@ -44,11 +36,13 @@ export const Home = memo((props: Props) => {
     <>
       <Helmet>
         <title>Home</title>
-        <meta name="description" content="Description of Home" />
+        <meta name='description' content='Description of Home' />
       </Helmet>
-        <Container>
-            <ScrollToTop />
-        </Container>
+      <Container>
+        <ScrollToTop />
+
+
+      </Container>
     </>
   );
 });

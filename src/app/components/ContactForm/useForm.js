@@ -1,24 +1,24 @@
-import { useState, useEffect } from "react";
-import { notification } from "antd";
-import axios from "axios";
+import { useState, useEffect } from 'react';
+import { notification } from 'antd';
+import axios from 'axios';
 
-const useForm = (validate) => {
+const useForm = validate => {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [shouldSubmit, setShouldSubmit] = useState(false);
 
-  const openNotificationWithIcon = (type) => {
+  const openNotificationWithIcon = type => {
     notification[type]({
-      message: "Success",
-      description: "Your message has been sent!",
+      message: 'Success',
+      description: 'Your message has been sent!',
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = "";
+    const url = '';
     if (Object.keys(values).length === 3) {
       axios
         .post(url, {
@@ -32,18 +32,18 @@ const useForm = (validate) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
-      setValues("");
-      openNotificationWithIcon("success");
+      setValues('');
+      openNotificationWithIcon('success');
     }
   }, [errors, shouldSubmit]);
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     event.persist();
-    setValues((values) => ({
+    setValues(values => ({
       ...values,
       [event.target.name]: event.target.value,
     }));
-    setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
+    setErrors(errors => ({ ...errors, [event.target.name]: '' }));
   };
 
   return {

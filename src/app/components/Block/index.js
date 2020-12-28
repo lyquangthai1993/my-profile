@@ -1,8 +1,8 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { Fade } from "react-reveal";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Fade } from 'react-reveal';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 const Block = ({ title, content }) => {
   const { t } = useTranslation();

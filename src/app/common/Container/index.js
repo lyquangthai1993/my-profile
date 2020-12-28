@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import * as S from "./styles";
+import * as S from './styles';
 
-const Container = (props) => (
+const Container = props => (
   <S.Container {...props}>{props.children}</S.Container>
 );
 

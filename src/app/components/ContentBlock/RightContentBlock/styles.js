@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const RightBlockContainer = styled.section`
   position: relative;
-  padding: ${(props) =>
-    props.last ? "8rem 0 10rem" : props.first ? "10rem 0 8rem" : "8rem 0 8rem"};
+  padding: ${props =>
+    props.last ? '8rem 0 10rem' : props.first ? '10rem 0 8rem' : '8rem 0 8rem'};
 
   @media only screen and (max-width: 768px) {
-    padding: ${(props) => (props.last ? "5rem 0 6rem" : "8rem 0 6rem")};
+    padding: ${props => (props.last ? '5rem 0 6rem' : '8rem 0 6rem')};
   }
 `;
 

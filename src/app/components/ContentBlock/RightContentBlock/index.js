@@ -1,12 +1,12 @@
-import React from "react";
-import { Row, Col } from "antd";
-import { useTranslation } from "react-i18next";
-import { Slide } from "react-reveal";
+import React from 'react';
+import { Row, Col } from 'antd';
+import { useTranslation } from 'react-i18next';
+import { Slide } from 'react-reveal';
 
-import SvgIcon from "../../../common/SvgIcon";
-import Button from "../../../common/Button";
+import SvgIcon from '../../../common/SvgIcon';
+import Button from '../../../common/Button';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 const RightBlock = ({ last, first, title, content, button, icon }) => {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ const RightBlock = ({ last, first, title, content, button, icon }) => {
               <S.Content>{t(content)}</S.Content>
               <S.ButtonWrapper>
                 {button &&
-                  typeof button === "object" &&
+                  typeof button === 'object' &&
                   button.map((item, id) => {
                     return (
                       <Button key={id} color={item.color} width="true">
