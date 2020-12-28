@@ -1,0 +1,7 @@
+.github
+.idea
+.vscode
+build/**
+node_modules
+/.vscode/
+/.github/
