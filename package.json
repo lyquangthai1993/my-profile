@@ -32,6 +32,8 @@
   ],
   "scripts": {
     "build:tailwind": "npx tailwindcss-cli@latest build ./src/styles/tailwind.css -o ./src/styles/tailwind.scss",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "// ---DEFAULT CRA---": "",
     "start": "react-scripts start",
     "build": "npm run build:tailwind &&  react-scripts build",
@@ -57,6 +59,7 @@
     "create:cra-app": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/scripts/create-cra-app.script.ts",
     "// ---PUBLISHING---": "",
     "publish:github": "cross-env PUBLIC_URL='/react-boilerplate-cra-template' npm run build && gh-pages -d build",
+    "publish:myprofile": "cross-env PUBLIC_URL='/my-profile' npm run build && gh-pages -d build",
     "changelog": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/scripts/create-changelog.script.ts",
     "release": "standard-version",
     "publish:npm": "npm run create:npm-package && npm publish .cra-template-rb"
