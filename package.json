@@ -1,5 +1,5 @@
 {
-  "name": "cra-template-rb",
+  "name": "my-profile",
   "description": "The official React Boilerplate template for Create React App",
   "version": "1.0.2",
   "repository": {
@@ -12,7 +12,7 @@
     "node": ">=10.13.0"
   },
   "bugs": {
-    "url": "https://github.com/react-boilerplate/react-boilerplate-cra-template/issues"
+    "url": ""
   },
   "main": "template.json",
   "files": [
