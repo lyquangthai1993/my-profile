@@ -15,5 +15,21 @@
   "scaffoldingFeature": {
     "title": "Quick Scaffolding",
     "description": "Automate the creation of components, features, routes, selectors and sagas - and their tests - right from the CLI! Avoid fighting the glue of your code and focus on your app!"
-  }
+  },
+  "About": "About",
+  "Policy": "Policy",
+  "Mission": "Mission",
+  "Product": "Product",
+  "Tell us everything": "Tell us everything",
+  "Contact": "Contact",
+  "Do you have any question regarding the project? Fell free to reach out.": "Do you have any question regarding the project? Fell free to reach out.",
+  "Let's Chat": "Let's Chat",
+  "Application Security": "Application Security",
+  "Software Principles": "Software Principles",
+  "Support Center": "Support Center",
+  "Customer Support": "Customer Support",
+  "ADDRESS": "ADDRESS",
+  "Press": "Press",
+  "Careers & Culture": "Careers & Culture",
+  "Language": "Language"
 }
