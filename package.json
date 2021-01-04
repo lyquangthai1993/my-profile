@@ -1,7 +1,8 @@
 {
+  "homepage": "http://lyquangthai1993.github.io/my-profile",
   "name": "my-profile",
   "description": "The official React Boilerplate template for Create React App",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-boilerplate/react-boilerplate-cra-template.git"
@@ -22,13 +23,8 @@
   "keywords": [
     "react",
     "create-react-app",
-    "template",
-    "typescript",
-    "redux",
-    "reduxjs",
-    "react-redux",
-    "react-boilerplate",
-    "styled-components"
+    "lyquangthai1993",
+    "my-profile"
   ],
   "scripts": {
     "build:tailwind": "npx tailwindcss-cli@latest build ./src/styles/tailwind.css -o ./src/styles/tailwind.scss",
