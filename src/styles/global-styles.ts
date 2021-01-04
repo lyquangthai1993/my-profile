@@ -1,10 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { StyleConstants } from './StyleConstants';
-// @ts-ignore
-import antd from 'antd/dist/antd.css';
-/* istanbul ignore next */
+
 export const GlobalStyle = createGlobalStyle`
-  ${antd}
+
   html,
   body {
     height: 100%;
@@ -14,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
+      //padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
     background-color: ${p => p.theme.background};
   }
 
@@ -83,10 +81,8 @@ export const GlobalStyle = createGlobalStyle`
   .ant-drawer-body {
     display: flex;
     flex-direction: column;
-    padding: 1.25rem;
     text-align: left;
-    padding-top: 2.5rem;
-    padding-right: 2rem;
+    padding: 1.25rem 2rem 1.25rem 2.5rem;
   }
 
   .ant-select-selector {
@@ -95,7 +91,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .anticon.ant-notification-notice-icon-success {
-    color: rgb(255,130,92);
+    color: rgb(255, 130, 92);
   }
 
   .ant-select-focused .ant-select-selector,

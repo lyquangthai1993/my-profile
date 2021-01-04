@@ -85,7 +85,7 @@ const Footer = () => {
                     value={i18n.language}
                   >
                     <Option value="en">English</Option>
-                    <Option value="es">Español</Option>
+                    <Option value="es">Vietnamese</Option>
                   </Select>
                 </S.Select>
               </Col>
